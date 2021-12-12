@@ -8,11 +8,13 @@ const Card = () => {
     return (
         <div className="card">
             <Hero className="heroImage"/>
-            <h1>Order Summary</h1>
-            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-            <PlanSelection />
-            <Proceed />
-            <a href="#">Cancel Order</a>
+            <div className="cardContent">
+                <h1>Order Summary</h1>
+                <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+                <PlanSelection />
+                <Proceed />
+                <a href="#" className="cancelOrder">Cancel Order</a>
+            </div>
         </div>
     )
 }
