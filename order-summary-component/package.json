@@ -1,8 +1,8 @@
 {
-  "homepage": "https://lenniecottrell.github.io/order-summary-component",
+  "homepage": "https://lenniecottrell.github.io/FM-order-summary-component/",
   "name": "order-summary-component",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
