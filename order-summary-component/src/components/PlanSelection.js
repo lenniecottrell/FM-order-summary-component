@@ -6,8 +6,8 @@ const PlanSelection = () => {
         <div className = "planSelection">
             <MusicIcon className="musicIcon"/>
             <div className="planText">
-                <h3>Annual Plan</h3>
-                <p>$59.99/year</p>
+                <h4 className="planType">Annual Plan</h4>
+                <p className="price">$59.99/year</p>
             </div>
             <a href='#' className="changeLink"> Change</a>
         </div>

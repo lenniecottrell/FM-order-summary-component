@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 /*Variables */
-:root {
+html {
   --mobile-width: 375px;
   --desktop-width: 1440px;
   --pale-blue: hsl(225, 100%, 94%);
@@ -38,15 +38,21 @@
   align-items: center;
   border: none;
   border-radius: 1.5rem;
-  box-shadow: 0px 1px 15px 4px var(--desaturated-blue);
-  margin: 10px 20rem;
+  /* box-shadow: 0px 1px 15px 4px var(--desaturated-blue); */
+box-shadow: 2px 27px 27px -10px rgba(171,171,171,0.47);  max-width: 400px;
 }
 
 .cardContent {
   display: flex;
   flex-direction: column;
-  padding: 0rem 20px;
+  align-items: center;
+  padding: 0rem 30px;
   color: var(--desaturated-blue);
+}
+
+.cardContent > h2 {
+  color: var(--dark-blue);
+  margin-bottom: 0px;
 }
 
 .card > h1 h2 {
@@ -60,8 +66,9 @@
 }
 
 .heroImage {
-  max-width: 100%;
+  width: 100%;
   max-height: auto;
+  object-fit: contain;
   border-radius: 1rem 1rem 0 0 ;
 }
 
@@ -72,7 +79,10 @@
   border-radius: 0.6rem;
   background-color: var(--very-pale-blue);
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0rem;
+  margin-bottom: 1rem;
 }
 
 .planSelection a {
@@ -80,16 +90,32 @@
   color: var(--bright-blue);
 }
 
-.planText h3{
+.planText {
+  margin-left: 20px;
+}
+
+.planText h4{
   color: var(--dark-blue);
 }
 
 .changeLink {
-  margin-left: 20px;
+  margin-left: 6rem;
+  font-size: 14px;
+  font-weight: 700;
 }
 
-.musicIcon {
+.changeLink:hover {
+  color: hsl(245, 75%, 68%);
+  text-decoration: none;
+  font-weight: 900;
+}
 
+.planType {
+  margin: 0;
+}
+
+.price{
+  margin: 0;
 }
 
 .proceed {
@@ -97,19 +123,30 @@
   font-family: 'Red Hat Display';
   font-weight: 700;
   background-color: var(--bright-blue);
+  width: 100%;
   padding: 1rem;
+  margin-top: 10px;
   border: none;
   border-radius: 1rem;
-  box-shadow: 0 3px 6px 1px var(--desaturated-blue);
+box-shadow: 2px 20px 27px -10px var(--desaturated-blue);}
 
+.proceed:hover {
+  background-color: hsl(245, 75%, 68%);
 }
 
 .cancelOrder {
   text-decoration: none;
+  width: fit-content;
   padding: 1rem;
   margin: 10px 0px;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--desaturated-blue)
 }
 
+.cancelOrder:hover {
+  color: var(--dark-blue);
+}
 /* @media (prefers-reduced-motion: no-preference) {
   .App {
     

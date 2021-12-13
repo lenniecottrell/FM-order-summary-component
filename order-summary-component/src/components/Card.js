@@ -4,7 +4,9 @@ import PlanSelection from '../components/PlanSelection'
 import { ReactComponent as Hero } from '../images/illustration-hero.svg'
 
 
+
 const Card = () => {
+
     return (
         <div className="card">
             <Hero className="heroImage"/>
