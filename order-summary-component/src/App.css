@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 /*Variables */
-html {
+html, body {
   --mobile-width: 375px;
   --desktop-width: 1440px;
   --pale-blue: hsl(225, 100%, 94%);
@@ -21,10 +21,10 @@ html {
 
 .App {
   display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   text-align: center;
-  justify-content: center;
-  align-items: center;
   background: var(--pale-blue);
   background-image: url('./images/pattern-background-desktop.svg');
   background-repeat: no-repeat;
@@ -34,10 +34,10 @@ html {
 }
 
 .card {
-  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
   border: none;
   border-radius: 1.5rem;
   box-shadow: 2px 27px 27px -10px rgba(171,171,171,0.47);
@@ -52,16 +52,6 @@ html {
   color: var(--desaturated-blue);
 }
 
-@media only screen and (max-width: 375px) {
-  .card {
-    height: 80vh;
-    max-width: 320px;
-  }
-  .cardContent {
-    width: 100%;
-    height:70%;
-  }
-}
 .cardContent > h2 {
   color: var(--dark-blue);
   margin-bottom: 0px;
@@ -87,11 +77,11 @@ html {
 .planSelection {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 0.6rem;
   background-color: var(--very-pale-blue);
-  align-items: center;
-  justify-content: center;
   width: 100%;
   padding: 1rem 0rem;
   margin-bottom: 1rem;
@@ -100,6 +90,36 @@ html {
 .planSelection a {
   font-weight: 500;
   color: var(--bright-blue);
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    height: 80vh;
+    max-width: 320px;
+  }
+  .cardContent {
+    width: 85%;
+  }
+  .cardContent > p {
+    line-height: 1.5;
+  }
+  .planSelection {
+    padding: 0.75rem 0rem;
+    justify-content: flex-start;
+  }
+  .musicIcon {
+    margin-left: 15px;
+  }
+  .planText {
+    margin: 0 0 0 18px !important;
+  }
+  .changeLink {
+    margin: 0 0 0 38px !important;
+    font-weight: 700 !important;
+  }
+  .proceed {
+    font-size: 15px;
+  }
 }
 
 .planText {
