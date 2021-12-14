@@ -6,8 +6,6 @@ import heroSVG from '../images/illustration-hero.svg'
 
 
 const Card = () => {
-
-
     return (
         <div className="card">
             <img className="heroImage" src={heroSVG} alt="heroImage" />

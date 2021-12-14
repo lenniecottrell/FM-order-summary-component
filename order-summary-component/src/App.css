@@ -38,16 +38,19 @@ html, body {
   background: white;
   border: none;
   border-radius: 1.5rem;
+  width:27rem;
+  height: 38rem;
   box-shadow: 2px 27px 27px -10px rgba(171,171,171,0.47);
-  max-width: 400px;
 }
 
 .cardContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0rem 30px;
+  height: 100%;
+  padding: 1rem 2.5rem;
   color: var(--desaturated-blue);
+  font-size: 16;
 }
 
 .cardContent > h2 {
