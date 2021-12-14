@@ -1,15 +1,16 @@
 import React from 'react'
 import Proceed from '../components/Proceed'
 import PlanSelection from '../components/PlanSelection'
-import { ReactComponent as Hero } from '../images/illustration-hero.svg'
+import heroSVG from '../images/illustration-hero.svg'
 
 
 
 const Card = () => {
 
+
     return (
         <div className="card">
-            <Hero className="heroImage"/>
+            <img className="heroImage" src={heroSVG} alt="heroImage" />
             <div className="cardContent">
                 <h2>Order Summary</h2>
                 <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>

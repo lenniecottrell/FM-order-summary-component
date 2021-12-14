@@ -29,8 +29,6 @@ html, body {
   background-image: url('./images/pattern-background-desktop.svg');
   background-repeat: no-repeat;
   background-size: 100vw;
-
-  /* max-width: var(--desktop-width); */
 }
 
 .card {
@@ -70,7 +68,7 @@ html, body {
 .heroImage {
   width: 100%;
   max-height: auto;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 1rem 1rem 0 0 ;
 }
 
@@ -92,35 +90,6 @@ html, body {
   color: var(--bright-blue);
 }
 
-@media only screen and (max-width: 375px) {
-  .card {
-    height: 80vh;
-    max-width: 320px;
-  }
-  .cardContent {
-    width: 85%;
-  }
-  .cardContent > p {
-    line-height: 1.5;
-  }
-  .planSelection {
-    padding: 0.75rem 0rem;
-    justify-content: flex-start;
-  }
-  .musicIcon {
-    margin-left: 15px;
-  }
-  .planText {
-    margin: 0 0 0 18px !important;
-  }
-  .changeLink {
-    margin: 0 0 0 38px !important;
-    font-weight: 700 !important;
-  }
-  .proceed {
-    font-size: 15px;
-  }
-}
 
 .planText {
   margin-left: 20px;
@@ -160,28 +129,54 @@ html, body {
   margin-top: 10px;
   border: none;
   border-radius: 1rem;
-box-shadow: 2px 20px 27px -10px var(--desaturated-blue);}
-
-.proceed:hover {
-  background-color: hsl(245, 75%, 68%);
-}
-
-.cancelOrder {
-  text-decoration: none;
-  width: fit-content;
-  padding: 1rem;
-  margin: 10px 0px;
-  font-size: 14px;
-  font-weight: 900;
-  color: var(--desaturated-blue)
-}
-
-.cancelOrder:hover {
+  box-shadow: 2px 20px 27px -10px var(--desaturated-blue);}
+  
+  .proceed:hover {
+    background-color: hsl(245, 75%, 68%);
+  }
+  
+  .cancelOrder {
+    text-decoration: none;
+    width: fit-content;
+    padding: 1rem;
+    margin: 10px 0px;
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--desaturated-blue)
+  }
+  
+  .cancelOrder:hover {
   color: var(--dark-blue);
 }
-/* @media (prefers-reduced-motion: no-preference) {
-  .App {
-    
+
+/* Mobile styles */
+@media only screen and (max-width: 375px) {
+  .card {
+    height: 80vh;
+    max-width: 320px;
   }
-} */
+  .cardContent {
+    width: 85%;
+  }
+  .cardContent > p {
+    line-height: 1.5;
+  }
+  .planSelection {
+    padding: 0.75rem 0rem;
+    justify-content: flex-start;
+  }
+  .musicIcon {
+    margin-left: 15px;
+  }
+  .planText {
+    margin: 0 0 0 18px !important;
+  }
+  .changeLink {
+    margin: 0 0 0 38px !important;
+    font-weight: 700 !important;
+  }
+  .proceed {
+    font-size: 15px;
+  }
+}
 
