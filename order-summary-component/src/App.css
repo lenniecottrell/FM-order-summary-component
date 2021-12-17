@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 /*Variables */
-html, body {
+  *,
+*::before,
+*::after  {
   --mobile-width: 375px;
   --desktop-width: 1440px;
   --pale-blue: hsl(225, 100%, 94%);
@@ -11,12 +13,13 @@ html, body {
   --dark-blue: hsl(223, 47%, 23%);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-size: 16px;
+  box-sizing: inherit;
+  /* box-sizing: border-box; */
 };
 
 .cardContent > p {
   color: white;
+  font-size: 16px;
 }
 
 .App {
@@ -43,24 +46,35 @@ html, body {
   box-shadow: 2px 27px 27px -10px rgba(171,171,171,0.47);
 }
 
+h1 h2 {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+.sr-only {
+  overflow: hidden;
+  border: 0;
+  margin: 0;
+  height: 0px;
+  position: absolute;
+  widtH: 1px;
+  height: 1px
+}
+
 .cardContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  padding: 1rem 2.5rem;
-  color: var(--desaturated-blue);
-  font-size: 16;
+  padding: 1.25rem 2.5rem 0.5rem 2.5rem;
 }
 
 .cardContent > h2 {
-  color: var(--dark-blue);
-  margin-bottom: 0px;
+  margin: 1rem 0rem 0rem 0rem;
 }
 
-.card > h1 h2 {
-  color: var(--dark-blue);
-  font-weight: 900;
+.cardContent > p {
+  margin: 1rem;
+  color: var(--desaturated-blue);
 }
 
 .card > a {
@@ -93,14 +107,18 @@ html, body {
   color: var(--bright-blue);
 }
 
-
 .planText {
   margin-left: 20px;
+  text-align: left;
 }
 
-.planText h4{
-  color: var(--dark-blue);
+.planType {
+  font-size: 16px;
 }
+
+.price {
+  color: var(--desaturated-blue);
+} 
 
 .changeLink {
   margin-left: 6rem;
@@ -114,24 +132,17 @@ html, body {
   font-weight: 900;
 }
 
-.planType {
-  margin: 0;
-}
-
-.price{
-  margin: 0;
-}
-
 .proceed {
   color: white;
   font-family: 'Red Hat Display';
   font-weight: 700;
+  font-size: 14px;
   background-color: var(--bright-blue);
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem;
   margin-top: 10px;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   box-shadow: 2px 20px 27px -10px var(--desaturated-blue);}
   
   .proceed:hover {
@@ -159,13 +170,16 @@ html, body {
     max-width: 320px;
   }
   .cardContent {
-    width: 85%;
+    width: 100%;
+    padding: 1rem;
   }
   .cardContent > p {
     line-height: 1.5;
+    margin: 0.7rem;
   }
   .planSelection {
     padding: 0.75rem 0rem;
+    margin: 1rem 0rem;
     justify-content: flex-start;
   }
   .musicIcon {
