@@ -20,6 +20,8 @@ This is a solution to the [Order Summary Card challenge on Frontend Mentor](http
 ## Overview
 
 This is my first completed challenge for Frontend Mentor. I plan on finishing more as a way to solidify and enhance my front-end development skills, and as an opportunity to learn more about React, CSS, and accessibility best-practices.
+
+For these challenges I am given JPGs of the final product, fonts, font sizes, and colors. I am not given exact dimensions, so I have to guess!
 ### The challenge
 
 Users should be able to:
